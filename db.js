@@ -6,7 +6,7 @@ export function dbConnection(){
         // useUnifiedTopology: true,
     }
     try {
-        mongoose.connect("mongodb://127.0.0.1:27017/full-stack", params)
+        mongoose.connect("mongodb+srv://karthi:Karthick123@cluster0.tkmk9sb.mongodb.net/?retryWrites=true&w=majority/connection", params)
         console.log("Database connected Sucessfully")
     } catch (error) {
         console.log("Error connecting DB----", error)  
